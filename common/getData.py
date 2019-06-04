@@ -9,6 +9,7 @@
 class getData:
     Cookie = None
     loanid = None
+    leaveAmount = None
 
 if __name__ == '__main__':
     print(getData().Cookie)

@@ -28,4 +28,4 @@ class db_connect:
 
 
 if __name__ == '__main__':
-    print(db_connect().connect_mysql('select max(Id) from loan where MemberID = 1123888'))
+    print(db_connect().connect_mysql('select LeaveAmount from member where mobilephone = 18688775656'))

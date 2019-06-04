@@ -32,7 +32,8 @@ class workBook:
                 self.update_phone()
             else:
                 case['Params'] = sheet.cell(i,6).value
-            case['ExpectedResult'] = sheet.cell(i,7).value
+            case['sql'] = sheet.cell(i,7).value
+            case['ExpectedResult'] = sheet.cell(i,8).value
             allcase.append(case)
         final_data = []
         if conf == 'all':

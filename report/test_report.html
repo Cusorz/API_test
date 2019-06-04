@@ -116,8 +116,8 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">自动化测试</h1>
 <p class='attribute'><strong>测试人员 : </strong> 潘硕</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-05-31 12:47:33</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.734018</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-06-03 18:41:19</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:10:30.097504</p>
 <p class='attribute'><strong>测试结果 : </strong> 共 3，通过 1，错误 2，通过率= 33.33%</p>
 
 <p class='description'>自动化测试报告</p>
@@ -149,7 +149,7 @@ function html_escape(s) {
 </tr>
 
 <tr class='errorClass warning'>
-    <td>API_1.common.test_unit.run_addloan</td>
+    <td>API_1.common.test_unit.run_recharge</td>
     <td class="text-center">3</td>
     <td class="text-center">1</td>
     <td class="text-center">0</td>
@@ -158,7 +158,7 @@ function html_escape(s) {
 </tr>
 
 <tr id='pt1_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_addloan_1</div></td>
+    <td class='passCase'><div class='testcase'>test_recharge_1</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
@@ -168,8 +168,8 @@ function html_escape(s) {
     <div id='div_pt1_1' class="collapse in" align="left">
     <pre>
     
-pt1_1: 正在运行Login模块的1条用例
-测试数据是:{"mobilephone":"13777487502","pwd":"123456"}
+pt1_1: 现在正在运行Login模块的第1条用例
+测试数据是{'Caseid': 1, 'Moudle': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","pwd":"123456"}', 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"}
 
 
     </pre>
@@ -178,7 +178,7 @@ pt1_1: 正在运行Login模块的1条用例
 </tr>
 
 <tr id='ft1_2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_addloan_2</div></td>
+    <td class='errorCase'><div class='testcase'>test_recharge_2</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
@@ -188,25 +188,40 @@ pt1_1: 正在运行Login模块的1条用例
     <div id='div_ft1_2' class="collapse in" align="left">
     <pre>
     
-ft1_2: 正在运行add模块的2条用例
-测试数据是:{'memberId':'1123888','title':'借钱修别墅啦','amount':10000,'loanRate':10.0,'loanTerm':30,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}
-Expecting value: line 1 column 1 (char 0)
+ft1_2: 现在正在运行Recharge模块的第2条用例
+测试数据是{'Caseid': 2, 'Moudle': 'Recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","amount":"10000"}', 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688775656'}", 'ExpectedResult': '{\'status\':1,\'code\':\'10001\',\'data\':{"id":265,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18688775656","leaveamount":"expectedAmount","type":"1","regtime":"2019-05-01 22:15:50.0"},\'msg\':\'充值成功\'}'}
+充值前金额为-151993.99
+充值后金额为-151993.99
+充值金额为10000
+预期金额是-141993.99
+Decimal('-151993.99') != Decimal('-141993.99')
+Traceback (most recent call last):
+  File "E:\Users\shuoPan\ClassProjects\API_1\common\test_unit.py", line 89, in test_recharge
+    raise e
+  File "E:\Users\shuoPan\ClassProjects\API_1\common\test_unit.py", line 79, in test_recharge
+    self.assertEqual(after_amount,expected_amount)
+  File "E:\python37\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "E:\python37\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: Decimal('-151993.99') != Decimal('-141993.99')
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "E:\python37\lib\site-packages\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "E:\Users\shuoPan\ClassProjects\API_1\common\test_unit.py", line 107, in test_addloan
-    raise e
-  File "E:\Users\shuoPan\ClassProjects\API_1\common\test_unit.py", line 102, in test_addloan
-    self.assertEqual(eval(case2['ExpectedResult']),result.json())
-  File "E:\python37\lib\site-packages\requests\models.py", line 897, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "E:\python37\lib\json\__init__.py", line 348, in loads
-    return _default_decoder.decode(s)
-  File "E:\python37\lib\json\decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "E:\python37\lib\json\decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+  File "E:\Users\shuoPan\ClassProjects\API_1\common\test_unit.py", line 91, in test_recharge
+    workBook('recharge').write_result(case1['Caseid']+1,9,response.text)
+  File "E:\Users\shuoPan\ClassProjects\API_1\common\workbook.py", line 52, in write_result
+    workBook.save(api_path)
+  File "E:\python37\lib\site-packages\openpyxl\workbook\workbook.py", line 397, in save
+    save_workbook(self, filename)
+  File "E:\python37\lib\site-packages\openpyxl\writer\excel.py", line 292, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\Users\\shuoPan\\ClassProjects\\API_1\\testCase\\api.xlsx'
 
 
     </pre>
@@ -215,7 +230,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 </tr>
 
 <tr id='ft1_3' class='none'>
-    <td class='errorCase'><div class='testcase'>test_addloan_3</div></td>
+    <td class='errorCase'><div class='testcase'>test_recharge_3</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_3'>错误</button>
@@ -225,25 +240,22 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
     <div id='div_ft1_3' class="collapse in" align="left">
     <pre>
     
-ft1_3: 正在运行audit模块的3条用例
-测试数据是:{"id":'loanid',"status":4}
-Expecting value: line 1 column 1 (char 0)
+ft1_3: 现在正在运行Recharge模块的第3条用例
+测试数据是{'Caseid': 3, 'Moudle': 'Recharge', 'Title': '非正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': '{"mobilephone":"13777487502","amount":""}', 'sql': None, 'ExpectedResult': "{'status':0,'code':'20115','data':None,'msg':'请输入金额'}"}
 Traceback (most recent call last):
   File "E:\python37\lib\site-packages\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
-  File "E:\Users\shuoPan\ClassProjects\API_1\common\test_unit.py", line 107, in test_addloan
-    raise e
-  File "E:\Users\shuoPan\ClassProjects\API_1\common\test_unit.py", line 102, in test_addloan
-    self.assertEqual(eval(case2['ExpectedResult']),result.json())
-  File "E:\python37\lib\site-packages\requests\models.py", line 897, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "E:\python37\lib\json\__init__.py", line 348, in loads
-    return _default_decoder.decode(s)
-  File "E:\python37\lib\json\decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "E:\python37\lib\json\decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+  File "E:\Users\shuoPan\ClassProjects\API_1\common\test_unit.py", line 91, in test_recharge
+    workBook('recharge').write_result(case1['Caseid']+1,9,response.text)
+  File "E:\Users\shuoPan\ClassProjects\API_1\common\workbook.py", line 52, in write_result
+    workBook.save(api_path)
+  File "E:\python37\lib\site-packages\openpyxl\workbook\workbook.py", line 397, in save
+    save_workbook(self, filename)
+  File "E:\python37\lib\site-packages\openpyxl\writer\excel.py", line 292, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\python37\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'E:\\Users\\shuoPan\\ClassProjects\\API_1\\testCase\\api.xlsx'
 
 
     </pre>

@@ -1,0 +1,444 @@
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'} != "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != "{'status':1,'code':'10001','data':None,'msg':'竞标成功'}"
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'} != "{'status':1,'code':'11007','data':None,'msg':'参数错误'}"
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'} != "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != "{'status':1,'code':'10001','data':None,'msg':'竞标成功'}"
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'} != "{'status':1,'code':'11007','data':None,'msg':'参数错误:所有参数都不能为空'}"
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+'amount'
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'} != {'status': 1, 'code': '11007', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+- {'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空', 'status': 0}
+?               ^                                                    ^
+
++ {'code': '11007', 'data': None, 'msg': '参数错误:所有参数都不能为空', 'status': 1}
+?               ^                                                    ^
+
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+'amount'
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'} != {'status': 1, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+- {'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空', 'status': 0}
+?                                                                    ^
+
++ {'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空', 'status': 1}
+?                                                                    ^
+
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+'amount'
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+local variable 'before_amount' referenced before assignment
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+'amount'
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+local variable 'before_amount' referenced before assignment
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+'amount'
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+local variable 'before_amount' referenced before assignment
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+'amount'
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+local variable 'before_amount' referenced before assignment
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第3条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第3条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"29599","password":"123456","loanId":1753,"amount":1000}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第3条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"MemberId":"29599","password":"123456","LoanId":1753,"Amount":1000}
+{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空', 'status': 0}
+?           -   ^                         ^^^^^^^^^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行invest模块的第3条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"29599","password":"123456","loanId":5821,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第3条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"29599","password":"123456","loanId":5821,"amount":500000.00}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第3条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+正在运行login模块的第1条用例
+测试数据是{"mobilephone":"18688775656","pwd":"123456"}
+实际结果为:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+正在运行invest模块的第2条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":100}
+{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'} != {'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'}
+- {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           -   ^                         ^^^^^^             ^
+
++ {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
+实际结果为:{'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+正在运行invest模块的第3条用例
+测试数据是{"memberId":"1123888","password":"123456","loanId":17527,"amount":""}
+实际结果为:{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+现在正在运行Login模块的第1条用例
+测试数据是{'Caseid': 1, 'Moudle': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': '{"mobilephone":"13777487502","pwd":"123456"}', 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"}
+现在正在运行Recharge模块的第2条用例
+测试数据是{'Caseid': 2, 'Moudle': 'Recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'get', 'Params': '{"mobilephone":"13777487502","amount":"10000"}', 'ExpectedResult': '{\'status\':1,\'code\':\'10001\',\'data\':{"id":96,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13777487502","leaveamount":"76800.00","type":"1","regtime":"2019-05-01 22:15:50.0"},\'msg\':\'充值成功\'}'}
+{'sta[147 chars]t': '76800.00', 'type': '1', 'regtime': '2019-[29 chars]值成功'} != {'sta[147 chars]t': '86800.00', 'type': '1', 'regtime': '2019-[29 chars]值成功'}
+  {'code': '10001',
+   'data': {'id': 96,
+-           'leaveamount': '76800.00',
+?                           ^
+
++           'leaveamount': '86800.00',
+?                           ^
+
+            'mobilephone': '13777487502',
+            'pwd': 'E10ADC3949BA59ABBE56E057F20F883E',
+            'regname': '小蜜蜂',
+            'regtime': '2019-05-01 22:15:50.0',
+            'type': '1'},
+   'msg': '充值成功',
+   'status': 1}
+现在正在运行Recharge模块的第3条用例
+测试数据是{'Caseid': 3, 'Moudle': 'Recharge', 'Title': '非正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': '{"mobilephone":"13777487502","amount":""}', 'ExpectedResult': "{'status':0,'code':'20115','data':None,'msg':'请输入金额'}"}
+现在正在运行Login模块的第1条用例
+测试数据是{'Caseid': 1, 'Moudle': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': '{"mobilephone":"13777487502","pwd":"123456"}', 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"}
+现在正在运行Recharge模块的第2条用例
+测试数据是{'Caseid': 2, 'Moudle': 'Recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'get', 'Params': '{"mobilephone":"13777487502","amount":"10000"}', 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688775656'}", 'ExpectedResult': '{\'status\':1,\'code\':\'10001\',\'data\':{"id":96,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13777487502","leaveamount":"expectedAmount","type":"1","regtime":"2019-05-01 22:15:50.0"},\'msg\':\'充值成功\'}'}
+Decimal('-151993.99') != Decimal('-141993.99')
+现在正在运行Recharge模块的第3条用例
+测试数据是{'Caseid': 3, 'Moudle': 'Recharge', 'Title': '非正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': '{"mobilephone":"13777487502","amount":""}', 'sql': None, 'ExpectedResult': "{'status':0,'code':'20115','data':None,'msg':'请输入金额'}"}
+现在正在运行Login模块的第1条用例
+测试数据是{'Caseid': 1, 'Moudle': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': '{"mobilephone":"13777487502","pwd":"123456"}', 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"}
+现在正在运行Recharge模块的第2条用例
+测试数据是{'Caseid': 2, 'Moudle': 'Recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","amount":"10000"}', 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688775656'}", 'ExpectedResult': '{\'status\':1,\'code\':\'10001\',\'data\':{"id":96,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13777487502","leaveamount":"expectedAmount","type":"1","regtime":"2019-05-01 22:15:50.0"},\'msg\':\'充值成功\'}'}
+Decimal('-151993.99') != Decimal('-141993.99')
+现在正在运行Recharge模块的第3条用例
+测试数据是{'Caseid': 3, 'Moudle': 'Recharge', 'Title': '非正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': '{"mobilephone":"13777487502","amount":""}', 'sql': None, 'ExpectedResult': "{'status':0,'code':'20115','data':None,'msg':'请输入金额'}"}
+现在正在运行Login模块的第1条用例
+测试数据是{'Caseid': 1, 'Moudle': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': '{"mobilephone":"13777487502","pwd":"123456"}', 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"}
+现在正在运行Recharge模块的第2条用例
+测试数据是{'Caseid': 2, 'Moudle': 'Recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","amount":"10000"}', 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688775656'}", 'ExpectedResult': '{\'status\':1,\'code\':\'10001\',\'data\':{"id":96,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"13777487502","leaveamount":"expectedAmount","type":"1","regtime":"2019-05-01 22:15:50.0"},\'msg\':\'充值成功\'}'}
+充值前金额为-151993.99
+充值后金额为-151993.99
+充值金额为10000
+预期金额是-141993.99
+Decimal('-151993.99') != Decimal('-141993.99')
+现在正在运行Recharge模块的第3条用例
+测试数据是{'Caseid': 3, 'Moudle': 'Recharge', 'Title': '非正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': '{"mobilephone":"13777487502","amount":""}', 'sql': None, 'ExpectedResult': "{'status':0,'code':'20115','data':None,'msg':'请输入金额'}"}
+现在正在运行Login模块的第1条用例
+测试数据是{'Caseid': 1, 'Moudle': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': '{"mobilephone":"13777487502","pwd":"123456"}', 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"}
+现在正在运行Recharge模块的第2条用例
+测试数据是{'Caseid': 2, 'Moudle': 'Recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","amount":"10000"}', 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688775656'}", 'ExpectedResult': '{\'status\':1,\'code\':\'10001\',\'data\':{"id":265,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18688775656","leaveamount":"expectedAmount","type":"1","regtime":"2019-05-01 22:15:50.0"},\'msg\':\'充值成功\'}'}
+充值前金额为-151993.99
+充值后金额为-151993.99
+充值金额为10000
+预期金额是-141993.99
+Decimal('-151993.99') != Decimal('-141993.99')
+现在正在运行Recharge模块的第3条用例
+测试数据是{'Caseid': 3, 'Moudle': 'Recharge', 'Title': '非正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': '{"mobilephone":"13777487502","amount":""}', 'sql': None, 'ExpectedResult': "{'status':0,'code':'20115','data':None,'msg':'请输入金额'}"}
+现在正在运行Login模块的第1条用例
+测试数据是{'Caseid': 1, 'Moudle': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","pwd":"123456"}', 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"}
+现在正在运行Recharge模块的第2条用例
+测试数据是{'Caseid': 2, 'Moudle': 'Recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","amount":"10000"}', 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688775656'}", 'ExpectedResult': '{\'status\':1,\'code\':\'10001\',\'data\':{"id":265,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18688775656","leaveamount":"expectedAmount","type":"1","regtime":"2019-05-01 22:15:50.0"},\'msg\':\'充值成功\'}'}
+充值前金额为-151993.99
+充值后金额为-151993.99
+充值金额为10000
+预期金额是-141993.99
+Decimal('-151993.99') != Decimal('-141993.99')
+现在正在运行Recharge模块的第3条用例
+测试数据是{'Caseid': 3, 'Moudle': 'Recharge', 'Title': '非正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': '{"mobilephone":"13777487502","amount":""}', 'sql': None, 'ExpectedResult': "{'status':0,'code':'20115','data':None,'msg':'请输入金额'}"}
+现在正在运行Login模块的第1条用例
+测试数据是{'Caseid': 1, 'Moudle': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","pwd":"123456"}', 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"}
+现在正在运行Recharge模块的第2条用例
+测试数据是{'Caseid': 2, 'Moudle': 'Recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","amount":"10000"}', 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688775656'}", 'ExpectedResult': '{\'status\':1,\'code\':\'10001\',\'data\':{"id":265,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18688775656","leaveamount":"expectedAmount","type":"1","regtime":"2019-05-01 22:15:50.0"},\'msg\':\'充值成功\'}'}
+充值前金额为-151993.99
+充值后金额为-151993.99
+充值金额为10000
+预期金额是-141993.99
+Decimal('-151993.99') != Decimal('-141993.99')
+现在正在运行Recharge模块的第3条用例
+测试数据是{'Caseid': 3, 'Moudle': 'Recharge', 'Title': '非正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': '{"mobilephone":"13777487502","amount":""}', 'sql': None, 'ExpectedResult': "{'status':0,'code':'20115','data':None,'msg':'请输入金额'}"}
+现在正在运行Login模块的第1条用例
+测试数据是{'Caseid': 1, 'Moudle': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","pwd":"123456"}', 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"}
+现在正在运行Recharge模块的第2条用例
+测试数据是{'Caseid': 2, 'Moudle': 'Recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","amount":"10000"}', 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688775656'}", 'ExpectedResult': '{\'status\':1,\'code\':\'10001\',\'data\':{"id":265,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18688775656","leaveamount":"expectedAmount","type":"1","regtime":"2019-05-01 22:15:50.0"},\'msg\':\'充值成功\'}'}
+充值前金额为-151993.99
+充值后金额为-151993.99
+充值金额为10000
+预期金额是-141993.99
+Decimal('-151993.99') != Decimal('-141993.99')
+现在正在运行Recharge模块的第3条用例
+测试数据是{'Caseid': 3, 'Moudle': 'Recharge', 'Title': '非正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': '{"mobilephone":"13777487502","amount":""}', 'sql': None, 'ExpectedResult': "{'status':0,'code':'20115','data':None,'msg':'请输入金额'}"}
+这是错误信息
+现在正在运行Login模块的第1条用例
+测试数据是{'Caseid': 1, 'Moudle': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","pwd":"123456"}', 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"}
+现在正在运行Recharge模块的第2条用例
+测试数据是{'Caseid': 2, 'Moudle': 'Recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","amount":"10000"}', 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688775656'}", 'ExpectedResult': '{\'status\':1,\'code\':\'10001\',\'data\':{"id":265,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18688775656","leaveamount":"expectedAmount","type":"1","regtime":"2019-05-01 22:15:50.0"},\'msg\':\'充值成功\'}'}
+充值前金额为-151993.99
+现在正在运行Login模块的第1条用例
+测试数据是{'Caseid': 1, 'Moudle': 'Login', 'Title': '正常登录', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","pwd":"123456"}', 'sql': None, 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'登录成功'}"}
+现在正在运行Recharge模块的第2条用例
+测试数据是{'Caseid': 2, 'Moudle': 'Recharge', 'Title': '正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'get', 'Params': '{"mobilephone":"18688775656","amount":"10000"}', 'sql': "{'sql':'select LeaveAmount from member where mobilephone = 18688775656'}", 'ExpectedResult': '{\'status\':1,\'code\':\'10001\',\'data\':{"id":265,"regname":"小蜜蜂","pwd":"E10ADC3949BA59ABBE56E057F20F883E","mobilephone":"18688775656","leaveamount":"expectedAmount","type":"1","regtime":"2019-05-01 22:15:50.0"},\'msg\':\'充值成功\'}'}
+充值前金额为-151993.99
+充值后金额为-151993.99
+充值金额为10000
+预期金额是-141993.99
+Decimal('-151993.99') != Decimal('-141993.99')
+现在正在运行Recharge模块的第3条用例
+测试数据是{'Caseid': 3, 'Moudle': 'Recharge', 'Title': '非正常充值', 'Url': 'http://test.lemonban.com/futureloan/mvc/api/member/recharge', 'Method': 'post', 'Params': '{"mobilephone":"13777487502","amount":""}', 'sql': None, 'ExpectedResult': "{'status':0,'code':'20115','data':None,'msg':'请输入金额'}"}
